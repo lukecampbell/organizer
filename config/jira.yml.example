@@ -1,0 +1,6 @@
+feed: http://jira.oceanobservatories.org/tasks/sr/jira.issueviews:searchrequest-xml/temp/SearchRequest.xml?jqlQuery=project+%3D+CIDEVSTC+AND+resolution+%3D+Unresolved+AND+fixVersion+%3D+%22M047+-+iPython+Notebook+ION+Service+Integration+%281.2.3.21.13.01%29%22+ORDER+BY+priority+DESC&tempMax=1000&os_authType=basic
+ 
+auth_string: auth string goes here
+user: username
+password: password
+
