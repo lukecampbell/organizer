@@ -18,3 +18,7 @@ class Email(Base,BaseModel):
         self.subject = subject
         self.date    = date
 
+    def open(self):
+        from sh import open as shopen
+        shopen(self.path)
+

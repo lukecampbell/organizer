@@ -8,17 +8,19 @@ class JiraTask(Base,BaseModel):
     component  = Column(String)
     created    = Column(Date)
     fixversion = Column(String)
-    key        = Column(Integer, primary_key = True)
+    key        = Column(Integer, primary_key=True)
     link       = Column(String)
     parent     = Column(Integer)
     priority   = Column(Integer)
     project    = Column(String)
     reporter   = Column(String)
     resolution = Column(Integer)
-    status_gif = Column(String)
-    status_id  = Column(Integer)
+    status     = Column(Integer)
     summary    = Column(String)
     title      = Column(String)
     task_type  = Column(Integer)
     updated    = Column(Date)
 
+    def open(self):
+        from sh import open as shopen
+        shopen(self.link)
