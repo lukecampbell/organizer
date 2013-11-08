@@ -9,7 +9,7 @@ setup(  name='organizer',
         author_email='luke.s.campbell@gmail.com',
         url='https://github.com/lukecampbell/organizer/',
         packages=packages,
-        package_data={'organizer' : ['organizer/config/*.yml']},
+        package_data={'organizer' : ['config/*.yml']},
         install_requires=['sqlalchemy']
         )
 
