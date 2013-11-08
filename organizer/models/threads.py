@@ -1,4 +1,4 @@
-from models.base import Base,BaseModel
+from organizer.models.base import Base,BaseModel
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
 

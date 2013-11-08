@@ -1,4 +1,4 @@
-from models.base import Base,BaseModel
+from organizer.models.base import Base,BaseModel
 from sqlalchemy import Column, Integer, String, Date, ForeignKey, Boolean
 from sqlalchemy.orm import relationship, backref
 

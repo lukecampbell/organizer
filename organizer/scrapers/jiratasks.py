@@ -1,4 +1,4 @@
-from models.jiratasks import JiraTask
+from organizer.models.jiratasks import JiraTask
 import feedparser
 import base64
 from time import mktime

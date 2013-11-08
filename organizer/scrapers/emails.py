@@ -1,5 +1,5 @@
-from models.emails import Email
-from models.threads import Thread
+from organizer.models.emails import Email
+from organizer.models.threads import Thread
 import os
 import dateutil.parser
 inbox_path = '/Users/luke/Library/Mail/V2/EWS-lcampbell@mail.asascience.com/Inbox.mbox'

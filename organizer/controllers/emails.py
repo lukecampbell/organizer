@@ -1,6 +1,6 @@
-from controllers.base_controller import BaseController
-from models.emails import Email
-from models.threads import Thread
+from organizer.controllers.base_controller import BaseController
+from organizer.models.emails import Email
+from organizer.models.threads import Thread
 
 
 class Emails(BaseController):

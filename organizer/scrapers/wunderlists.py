@@ -1,4 +1,4 @@
-from models.wunderlists import WunderTask, WunderList
+from organizer.models.wunderlists import WunderTask, WunderList
 from wunderpy import Wunderlist
 import dateutil.parser
 import base64

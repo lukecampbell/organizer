@@ -1,5 +1,5 @@
 from sqlalchemy.orm import sessionmaker
-from models.base import Base
+from organizer.models.base import Base
 
 class BaseController:
     def __init__(self, engine):

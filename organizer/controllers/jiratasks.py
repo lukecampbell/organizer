@@ -1,5 +1,5 @@
-from controllers.base_controller import BaseController
-from models.jiratasks import JiraTask
+from organizer.controllers.base_controller import BaseController
+from organizer.models.jiratasks import JiraTask
 import yaml
 
 class JiraTasks(BaseController):

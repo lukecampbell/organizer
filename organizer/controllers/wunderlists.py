@@ -1,5 +1,5 @@
-from controllers.base_controller import BaseController
-from models.wunderlists import WunderList, WunderTask
+from organizer.controllers.base_controller import BaseController
+from organizer.models.wunderlists import WunderList, WunderTask
 import yaml
 
 class WunderLists(BaseController):
