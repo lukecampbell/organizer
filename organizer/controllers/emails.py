@@ -1,9 +1,15 @@
 from organizer.controllers.base_controller import BaseController
 from organizer.models.emails import Email
 from organizer.models.threads import Thread
+import yaml
 
 
 class Emails(BaseController):
+
+    def __init__(self, engine, config):
+        BaseController.__init__(self, engine)
+        with open(config, 'r') as f:
+            self.config = yaml.load(f.read())
 
     def create(self):
         self.create_all(Email.__table__, Thread.__table__)
@@ -12,8 +18,9 @@ class Emails(BaseController):
         self.drop_all(Email.__table__, Thread.__table__)
 
     def scrape(self):
-        from scrapers.emails import inbox_path, fetch
-        fetch(self.session, inbox_path)
+        from organizer.scrapers.emails import fetch
+        for mailbox in self.config['mailboxes']:
+            fetch(self.session, mailbox)
 
 
 

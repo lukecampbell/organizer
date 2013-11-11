@@ -15,7 +15,7 @@ class WunderLists(BaseController):
         self.drop_all(WunderList.__table__, WunderTask.__table__)
 
     def scrape(self):
-        from scrapers.wunderlists import fetch
+        from organizer.scrapers.wunderlists import fetch
         fetch(self.session, self.config['auth_string'])
 
 

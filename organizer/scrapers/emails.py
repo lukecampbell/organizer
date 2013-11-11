@@ -24,6 +24,9 @@ def parse(session,filepath):
                     date = dateutil.parser.parse(dateline)
                 except IndexError:
                     continue # Don't know what to do about the date yet
+                except ValueError:
+                    print line
+                    continue
 
             if line.startswith('Thread-Topic:'):
                 try:

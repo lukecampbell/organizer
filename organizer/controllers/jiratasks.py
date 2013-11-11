@@ -15,6 +15,6 @@ class JiraTasks(BaseController):
         self.drop_all(JiraTask.__table__)
 
     def scrape(self):
-        from scrapers.jiratasks import fetch
+        from organizer.scrapers.jiratasks import fetch
         fetch(self.session, self.config['feed'], self.config['auth_string'])
 
